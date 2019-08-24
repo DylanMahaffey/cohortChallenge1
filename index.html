@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="Images/gavel-logo-white.png">
+    <title>Class Action Development</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/cef84bdb7e.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+</head>
+<body>
+    <header id="top">
+        <section class="overlay">
+            <div class="company-header hidden-load">
+                <img src="Images/gavel-logo-white.png" alt="CAD logo" class="logo">
+                <h1 class="company-title">CLASS ACTION DEVELOPMENT</h1>
+                <p>Helping to connect you with the people who need you most</p>
+            </div>
+
+            <hr id="header-hr">
+            <div class="company-info hidden-load">
+                <div class="header-info-card"><h4>Highest Quality</h4><p>UI/UX experience</p></div>
+                <div class="header-info-card"><h4>Industry Leading</h4><p>Team of Developers</p></div>
+                <div class="header-info-card"><h4>Unmatched</h4><p>Customer Service</p></div>
+            </div>
+        </section>
+    </header>
+
+    <section class="ui-ux-info">
+        <h2 class="body-header">UI/UX Supiriority</h2>
+        <p id="ui-ux-p" class="body-p hidden">
+            We put a major focus on the UI/UX that we design for our customers. 
+            What is UI/UX you ask? It is short for User Interface and User Experience.
+            We make sure that you don't just have the most beautiful website you can get, 
+            but we also put major focus on the experience of the user to minimize confusion 
+            and reduce the frustration of not knowing how to find the information that they need.
+            If your clients have a pleseant experience navigating your site then they are more than 
+            likely to feel good about working with you.
+        </p>
+
+        <div class="ui-ux-container">
+            <div id="ui-left" class="ui hidden-left">
+                <h3 class="body-header">UI</h3>
+                <ul>
+                    <li>Your website is the first impression that you want to get right every time.</li>
+                    <li>Stand out from the competition in the minds of potential clients.</li>
+                    <li>Let your clients know that you don't compromise on any aspect of your business.</li>
+                    <li>Flawless transition from your desktop to your smart phone.</li>
+                    <li>A site that looks so good, there is no need to worry about ever looking outdated.</li>
+
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div id="ux-right" class="ux hidden-right">
+                <h3 class="body-header">UX</h3>
+                <ul>
+                    <li>A smooth intuitive User Experience can lead to peace of mind and a feeling of trust.</li>
+                    <li>Clients who feel confident about your website will be more likely to view you with more confidence.</li>
+                    <li>An easy to navigate website will give any user a positive feeling they will associate with your company.</li>
+                    <li>
+                        We simplify the lives of your website visitors which will allow them to find what they need on their own, 
+                        freeing up you and your staff.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="body-p">
+            A poor UI/UX design can leave potential clients questioning the quality of your business. 
+            The last thing you want is for a client to struggle when, lets face it, they're most likely
+            going through a difficult time as it is. Let your clients know you take pride in every aspect 
+            of your professional life by starting with the right foot forward.
+        </p>
+    </section>
+
+    
+    <section id="conversion" class="hidden">
+        <h2 class="body-header">Get started today!</h2>
+        <p class="body-p">
+            The face of your company deserves to be a great one. A quick consultation with our staff will get you 
+            moving towards the website you need. We take the time to learn each of our customers needs before 
+            starting the design process. This ensures that you get a product that you are guarenteed to be happy with.
+            Click the button below to talk to our team about what we can do for you!
+        </p>
+        
+        <button id="chat"><i class="fas fa-comment-dots"></i>Chat with our Team</button>
+    </section>
+
+    <section class="img-break"></section>
+
+    <section id="contact" class="fade-in">
+        <h2 class="body-header">Contact Us</h2>
+        <p class="body-p">
+            Or use the form below to send an Email with any questions you may have.
+        </p>
+        <form action="https://formspree.io/dylan.mahaffey@gmail.com" method="POST">
+            <div class="form-info">
+                <div class="form-info-group">
+                    <label for="name">Full Name</label> <br>
+                    <input class="input" type="text" name="name" id="name">
+                </div>
+                <div class="form-info-group">
+                    <label for="email">Email</label> <br>
+                    <input class="input" type="text" name="email" id="email">
+                </div>
+            </div>
+            <label for="body">Message</label> <br>
+            <textarea class="textarea" name="body" id="body"></textarea>
+            <button>Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.github.com"><i class="fab fa-github-square"></i></a>
+    </footer>
+
+    <div id="fixed-to-bottom">
+        <div id="chat-window" class="hide-chat">
+                <div class="conversation-header">
+                    <span class="spacer"></span>
+                    <span>Design Expert</span>
+                    <span id="close">X</span>
+                </div>
+                    
+                <div id="convo-display">
+                    <span class="bubble recieved">Hello!</span>
+                    <span class="bubble recieved">
+                        Thanks for considering our company! Unfortunately this chat system isn't set up yet :/
+                        Please send us an email below using the contact form and we will get back to you ASAP.
+                    </span>
+                </div>
+                
+                
+                <div class="send-form">
+                    <input type="text" id="chat-body">
+                    <button id="chat-send">Send</button>
+                </div>
+        </div>
+        <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+</body>
+</html>
+
+<script src="js/scripts.js"></script>
