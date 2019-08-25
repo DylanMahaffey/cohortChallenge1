@@ -1,0 +1,100 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Quattrocento&display=swap');
+
+:root{
+    --light-grey: #f3f3f3;
+    --highlight: #CCA876;
+
+    --header-font: 'Cinzel', serif;
+    --content-font: 'Quattrocento', serif;
+}
+
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.8s ease;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+}
+h2{
+    font-size: 1.6em;
+}
+h3{
+    font-size: 1.4em;
+}
+p{
+    font-family: var(--content-font);
+    font-size: 1.2em;
+}
+a{
+    color: var(--highlight);
+    height: auto;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: darkturquoise;
+}
+li{
+    line-height: 30px;
+    font-size: 1.2em;
+}
+section{
+    width: 100%;
+    padding: 50px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Global classes */
+.body-header{
+    color: var(--highlight);
+    margin: 10px;
+    text-decoration: underline;
+}
+.body-p{
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    line-height: 35px;
+}
+button{
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 15px;
+    color: var(--highlight);;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+}
+button:hover{
+    background-color: var(--highlight);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Transitions */
+.hidden-load{
+    opacity: 0;
+    transform: translateY(50px)
+}
+.hidden{
+    opacity: 0;
+    transform: translateY(50px);
+}
+.hidden-right{
+    opacity: 0;
+    transform: translateX(50px);
+}
+.hidden-left{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.fade-in{
+    opacity: 0;
+}

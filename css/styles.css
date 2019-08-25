@@ -1,91 +1,4 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Quattrocento&display=swap');
-
-/* Universal */
-*{
-    margin: 0;
-    padding: 0;
-    transition: all 0.8s ease;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Cinzel', serif;
-}
-h2{
-    font-size: 1.6em;
-}
-h3{
-    font-size: 1.4em;
-}
-p{
-    font-family: 'Quattrocento', serif;
-    font-size: 1.2em;
-}
-a{
-    color: #CCA876;
-    height: auto;
-    transition: all 0.4s ease;
-}
-a:hover{
-    color: darkturquoise;
-}
-li{
-    line-height: 30px;
-    font-size: 1.2em;
-}
-section{
-    width: 100%;
-    padding: 50px 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.body-header{
-    color: #CCA876;
-    margin: 10px;
-    text-decoration: underline;
-}
-.body-p{
-    text-align: center;
-    width: 800px;
-    line-height: 35px;
-}
-button{
-    border: 1px solid #CCA876;
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px 15px;
-    color: #CCA876;
-    justify-self: center;
-    align-self: center;
-    margin: 10px;
-}
-button:hover{
-    background-color: #CCA876;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Transitions */
-.hidden-load{
-    opacity: 0;
-    transform: translateY(50px)
-}
-.hidden{
-    opacity: 0;
-    transform: translateY(50px)
-}
-.hidden-right{
-    opacity: 0;
-    transform: translateX(50px)
-}
-.hidden-left{
-    opacity: 0;
-    transform: translateX(-50px)
-}
-.fade-in{
-    opacity: 0;
-}
+@import url('global.css');
 
 /* Header Styles */
 header{
@@ -120,10 +33,9 @@ header p{
     font-size: 1.2em;
 }
 
-#header-hr{
+.header-hr{
     width: 90%;
     background-color: #CCA876;
-
 }
 
 .company-info{
@@ -149,7 +61,7 @@ header p{
 
 /* UI/UX Section */
 .ui-ux-info{
-    background-color: #f3f3f3;
+    background-color: var(--light-grey);
 }
 
 .ui-ux-video{
@@ -159,7 +71,8 @@ header p{
 
 
 .ui-ux-container{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -168,6 +81,9 @@ header p{
     border-left: 1px solid #CCA876;
     height: 70%;
     margin-top: 50px;
+}
+.hl{
+    display: none;
 }
 .ui, .ux{
     width: 100%;
@@ -178,10 +94,8 @@ li{
     margin: 20px
 }
 
-.ui-ux-stats{
-
-}
 .graphic{
+    width: 100%;
     max-width: 700px;
     margin: 40px;
 }
@@ -200,7 +114,7 @@ li{
 
 /* Contact */
 #contact{
-    background-color: #F3F3F3;
+    background-color: var(--light-grey);
     transition: all 1.5s ease;
 }
 form{
@@ -334,4 +248,59 @@ footer a:hover{
     margin: 0;
     background-color: #CCA876;
     color: #fff;
+}
+
+
+/* Media Query */
+@import url('scale.css');
+
+@media screen and (max-width: 1000px) {
+    .company-info{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .ui-ux-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hr{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .company-info{
+        flex-direction: column;
+    }
+    .header-info-card{
+        margin: 10px 0;
+    }
+    .ui-ux-container{
+        padding: 0;
+    }
+    .ui, .ux{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section{
+        padding: 50px 20px;
+    }
+
+    .company-header{
+        margin-bottom: 20px;
+    }
+    .company-title{
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    p,li{
+        font-size: 1em !important;
+    }
+
+    .header-hr{
+        width: 100%;
+    }
 }
