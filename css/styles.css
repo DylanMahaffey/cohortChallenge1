@@ -11,17 +11,26 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Cinzel', serif;
 }
 h2{
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 h3{
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 p{
     font-family: 'Quattrocento', serif;
+    font-size: 1.2em;
 }
 a{
-    color: inherit;
+    color: #CCA876;
     height: auto;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: darkturquoise;
+}
+li{
+    line-height: 30px;
+    font-size: 1.2em;
 }
 section{
     width: 100%;
@@ -38,8 +47,8 @@ section{
 }
 .body-p{
     text-align: center;
-    width: 1000px;
-    line-height: 23px;
+    width: 800px;
+    line-height: 35px;
 }
 button{
     border: 1px solid #CCA876;
@@ -143,6 +152,11 @@ header p{
     background-color: #f3f3f3;
 }
 
+.ui-ux-video{
+    height: 315px;
+    margin-top: 50px;
+}
+
 
 .ui-ux-container{
     width: 1000px;
@@ -162,6 +176,14 @@ header p{
 }
 li{
     margin: 20px
+}
+
+.ui-ux-stats{
+
+}
+.graphic{
+    max-width: 700px;
+    margin: 40px;
 }
 
 /* Image break */
@@ -214,7 +236,12 @@ footer{
 
     text-align: center;
 }
-a:hover{
+footer a{
+    color: #fff;
+    height: auto;
+    transition: all 0.4s ease;
+}
+footer a:hover{
     color: #CCA876;
 }
 

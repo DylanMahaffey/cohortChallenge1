@@ -29,6 +29,15 @@ $( document ).ready(function() {
     $("#ux-right").viewportChecker({
         classToRemove: 'hidden-right'
     })
+    $("#web-users-chart").viewportChecker({
+        classToRemove: 'hidden-left'
+    })
+    $("#good-mobile-design").viewportChecker({
+        classToRemove: 'hidden-right'
+    })
+    $("#user-experiences").viewportChecker({
+        classToRemove: 'hidden-left'
+    })
     $("#contact").viewportChecker({
         classToRemove: 'fade-in'
     })
