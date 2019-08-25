@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/cef84bdb7e.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/scale.css">
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -147,7 +148,11 @@
         <p class="body-p">
             Or use the form below to send an Email with any questions you may have.
         </p>
-        <form action="https://formspree.io/dylan.mahaffey@gmail.com" method="POST">
+        <p id="err-message">
+            <br>
+            Please Fill out all fields so we can respond promptly
+        </p>
+        <form id="contact-form" action="https://formspree.io/dylan.mahaffey@gmail.com" method="POST">
             <div class="form-info">
                 <div class="form-info-group">
                     <label for="name">Full Name</label> <br>
@@ -155,7 +160,7 @@
                 </div>
                 <div class="form-info-group">
                     <label for="email">Email</label> <br>
-                    <input class="input" type="text" name="email" id="email">
+                    <input class="input" type="email" name="email" id="email">
                 </div>
             </div>
             <label for="body">Message</label> <br>
@@ -188,10 +193,10 @@
                 </div>
                 
                 
-                <div class="send-form">
-                    <input type="text" id="chat-body">
-                    <button id="chat-send">Send</button>
-                </div>
+                <form id="chat-send">
+                    <input type="text" id="chat-body" class="input">
+                    <button id="chat-send" class="button">Send</button>
+                </form>
         </div>
         <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
     </div>

@@ -120,7 +120,8 @@ li{
 form{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
 .form-info{
     display: flex;
@@ -134,10 +135,19 @@ form{
 input{
     border: 1px solid #CCA876;
     width: 90%;
+
+    text-align: left;
 }
 textarea{
     border: 1px solid #CCA876;
     resize: none;
+
+    text-align: left;
+}
+
+#err-message{
+    color: red;
+    display: none;
 }
 
 /* Footer */
@@ -173,8 +183,8 @@ footer a:hover{
 }
 
 #chat-window{
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 0px;
     margin: 5px 0;
     display: flex;
     flex-direction: column;
@@ -203,6 +213,7 @@ footer a:hover{
 #convo-display{
     width: 100%;
     height: 100%;
+    padding: 5px;
     overflow-y: auto;
 
     display: flex;
@@ -217,12 +228,14 @@ footer a:hover{
 .bubble{
     width: 80%;
     border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 5px 0;
-    padding: 2px 5px;
+    padding: 5px;
 
     font-size: 15px;
-    line-height: 15px
+    line-height: 15px;
+
+    text-align: left;
 }
 .sent{
     align-self: flex-end;
@@ -234,7 +247,7 @@ footer a:hover{
 }
 
 
-.send-form{
+#chat-send{
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -248,59 +261,4 @@ footer a:hover{
     margin: 0;
     background-color: #CCA876;
     color: #fff;
-}
-
-
-/* Media Query */
-@import url('scale.css');
-
-@media screen and (max-width: 1000px) {
-    .company-info{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .ui-ux-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .hr{
-        display: block;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .company-info{
-        flex-direction: column;
-    }
-    .header-info-card{
-        margin: 10px 0;
-    }
-    .ui-ux-container{
-        padding: 0;
-    }
-    .ui, .ux{
-        padding: 0px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    section{
-        padding: 50px 20px;
-    }
-
-    .company-header{
-        margin-bottom: 20px;
-    }
-    .company-title{
-        font-size: 2em;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-    }
-    p,li{
-        font-size: 1em !important;
-    }
-
-    .header-hr{
-        width: 100%;
-    }
 }

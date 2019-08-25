@@ -1,5 +1,53 @@
+@media screen and (max-width: 1000px) {
+    .company-info{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .ui-ux-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hr{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .company-info{
+        flex-direction: column;
+    }
+    .header-info-card{
+        margin: 10px 0;
+    }
+    .ui-ux-container{
+        padding: 0;
+    }
+    .ui, .ux{
+        padding: 0px;
+    }
+    .form-info{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 550px) {
+    section{
+        padding: 50px 20px;
+    }
+
+    .company-header{
+        margin-bottom: 20px;
+    }
     .company-title{
-        font-size: 2em;
+        font-size: 2.1em;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    p,li{
+        font-size: 1.1em !important;
+    }
+
+    .header-hr{
+        width: 100%;
     }
 }
